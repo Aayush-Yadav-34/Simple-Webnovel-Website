@@ -283,7 +283,7 @@ footer {
 }
 
 /* Responsive Design */
-/*@media (max-width: 768px) {
+@media (max-width: 768px) {
     .container {
         width: 100%;
     }
@@ -307,7 +307,7 @@ footer {
         margin: 10px 0;
     }
 }
-*/
+
 /* Novel Detail Page Styles */
 .novel-image {
     max-width: 200px;
