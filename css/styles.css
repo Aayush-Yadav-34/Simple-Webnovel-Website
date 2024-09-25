@@ -276,33 +276,6 @@ footer {
     padding: 1rem 0;
     text-align: center;
 }
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .container {
-        width: 100%;
-    }
-
-    .novels .novel, .genres .genre, .ranking .rank-item {
-        width: 100%;
-        margin: 1rem 0;
-    }
-
-    .hero input[type="text"] {
-        width: 80%;
-    }
-
-    nav ul {
-        float: none;
-        text-align: center;
-    }
-
-    nav ul li {
-        display: block;
-        margin: 10px 0;
-    }
-}
-
 /* Novel Detail Page Styles */
 .novel-image {
     max-width: 210px;
