@@ -1,0 +1,358 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Container for layout */
+.container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header styles */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    position: relative;
+    z-index: 1000;
+}
+
+header h1 {
+    float: left;
+    font-size: 2rem;
+}
+
+nav ul {
+    float: right;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: gray;
+}
+
+/* Hero section styles */
+.hero {
+    background: #e2e2e2;
+    padding: 2rem 0;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero h2 {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
+}
+
+.hero input[type="text"] {
+    padding: 0.5rem;
+    width: 50%;
+    margin-top: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Novels section styles */
+.novels {
+    padding: 2rem 0;
+    background: #fff;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Make the entire novel box clickable */
+.novels .novel {
+    background: #fff;
+    max-height: 180px;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 30%;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none; /* Remove underline from text */
+    color: inherit; /* Ensure the text color is inherited */
+    display: block; /* Make the link cover the entire novel block */
+}
+
+.novels .novel-list {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}    
+
+.novels .novel img {
+    max-width: 80px;
+    height: auto;
+    align-self: center;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+}
+
+.novels .novel:hover {
+    transform: scale(1.05);
+    background-color: #aaa;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+/* Ensure hover for the link behaves correctly */
+.novels .novel h3, .novels .novel p {
+    margin-bottom: 0.5rem;
+}
+
+.novels a:hover {
+    text-decoration:none;
+}
+
+.novels a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.novels .webnovel {
+    background: #fff;
+    align-self: flex-end;
+    max-height: 20px;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border: 1px  #ddd;
+    border-radius: 10px;
+    width: 90px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    color: inherit;
+}
+
+.novels .webnovel:hover {
+    transform: scale(1.05);
+    background-color: #aaa;
+    text-decoration: underline;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+/* Genres section styles */
+.genres {
+    padding: 2rem 0;
+    background: #f4f4f4;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.genres .genre-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.genres .genre {
+    background: #fff;
+    padding: 1rem;
+    margin: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 45%;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none; /* Remove underline from text */
+    color: inherit; /* Ensure the text color is inherited */
+    display: block; /* Make the link cover the entire genre block */
+}
+
+.genres a {
+    color: #333;
+    text-decoration: none;
+    font-weight: none;
+}
+
+.genres a:hover {
+    text-decoration: none;
+}
+
+.genres .genre:hover {
+    transform: scale(1.05);
+    background-color: #aaa;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.genres .genre h3 {
+    margin-bottom: 0rem;
+}
+
+/* Ranking section styles */
+.ranking {
+    padding: 1rem 0;
+    background: #fff;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.ranking .ranking-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ranking .rank-item {
+    background: #f4f4f4;
+    padding: 1rem;
+    margin: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 80%;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    text-decoration: none; /* Remove underline from text */
+    color: inherit; /* Ensure the text color is inherited */
+    display: block; /* Make the link cover the entire rank-item block */
+}
+
+.ranking a {
+    color: #333;
+    text-decoration: none;
+    font-weight: none;
+}
+
+.ranking a:hover {
+    text-decoration: none;
+}
+
+.ranking .rank-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.ranking .rank-item h3 {
+    margin-bottom: 0.5rem;
+}
+
+/* Contact section styles */
+.contact {
+    padding: 1rem 0;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+.contact a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+/* Footer styles */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+
+    .novels .novel, .genres .genre, .ranking .rank-item {
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+    .hero input[type="text"] {
+        width: 80%;
+    }
+
+    nav ul {
+        float: none;
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+/* Novel Detail Page Styles */
+.novel-image {
+    max-width: 210px;
+    box-shadow: 0 0 20px rgba(149, 96, 96, 0.784);
+    height: auto;
+    margin-bottom: 1.5rem;
+}
+
+.novel-detail {
+    padding: 2rem;
+    background: #fff;
+    text-align: center;
+}
+
+.novel-detail h2 {
+    margin-bottom: 1rem;
+}
+
+.novel-detail p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.novel-detail .green{
+    font-size: 25px;
+    color:green;
+}
+
+.novel-detail .red{
+    font-size: 25px;
+    color:red;
+}
+
+#switch-theme-btn{
+    display: inline-block;
+    padding: 0.5rem;
+    background-color: #333;
+    border-radius: 3rem;
+    font-size: 1rem;
+    color: #fff;
+    letter-spacing: 0rem;
+    font-weight: 20;
+    border: 1px solid white;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+#switch-theme-btn:hover{
+    transform: scale3d(1.03);
+    background-color: #242323dc;
+    color: white;
+    box-shadow: 0 0 15px #938787dc;
+}

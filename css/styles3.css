@@ -1,0 +1,333 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General body styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.2;
+    color: white;
+    background-color: black;
+}
+
+/* Container for layout */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header styles */
+header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 0;
+    filter: drop-shadow(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #b74b4b;
+    height: 25px;
+    font-weight: 700;
+    transition: 0.5s ease;
+}
+
+header h1:hover {
+    transform: scale(1);
+}
+
+nav ul {
+    display: flex;
+    float: right;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    font-size: 1.2rem;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: #b74b4b;
+    border-bottom: 3px solid #b74b4b;
+}
+
+/* Hero section styles */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+    text-align: center;
+    gap: 1rem;
+    background-color: black;
+}
+
+.hero h2 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.hero p {
+    font-size: 1.5rem;
+}
+
+.hero input[type="text"] {
+    padding: 0.5rem;
+    width: 50%;
+    margin-top: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Novels section styles */
+.novels {
+    padding: 2rem 0;
+    background: black;
+}
+
+.novels .novel {
+    background: black;
+    max-height: 180px;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 30%;
+    box-shadow: 0 0 15px rgba(149, 96, 96, 0.784);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+.novels .novel-list {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+} 
+
+.novels .novel img {
+    max-width: 80px;
+    height: auto;
+    align-self: center;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+}
+
+.novels .novel:hover {
+    /*background-color: #2e2b5f;*/
+     /* color: #ffffff;*/
+    /*box-shadow: 0 0 10px #2e2b5f, 0 0 20px #2e2b5f, 0 0 30px #2e2b5f; */
+    transform: scale(1.05);
+    background-color: #940808;
+    box-shadow: 0 0 15px rgba(224, 38, 38, 0.784);
+}
+
+.novels .novel h3, .novels .novel p {
+    margin-bottom: 0.5rem;
+}
+
+.novels .webnovel {
+    background: black;
+    max-height: 20px;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border: 1px  #ddd;
+    border-radius: 10px;
+    width: 7%;
+    box-shadow: 0 0 15px rgba(149, 96, 96, 0.784);
+    text-decoration: none;
+    color: inherit;
+}
+
+.novels .webnovel:hover {
+    text-decoration: underline;
+    transform: scale(1.05);
+    background-color: #940808;
+    box-shadow: 0 0 15px rgba(224, 38, 38, 0.784);
+}
+
+/* Genres section styles */
+.genres {
+    padding: 2rem 0;
+    background: black;
+}
+
+.genres .genre-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.genres .genre {
+    background: black;
+    padding: 1rem;
+    margin: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 45%;
+    box-shadow: 0 0 10px rgba(149, 96, 96, 0.784);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.genres .genre:hover {
+    transform: scale(1.05);
+    background-color: #940808;
+    box-shadow: 0 0 15px rgba(224, 38, 38, 0.784);
+}
+
+.genres .genre h3 {
+    margin-bottom: 0;
+}
+
+/* Ranking section styles */
+.ranking {
+    padding: 1rem 0;
+    background: black;
+}
+
+.ranking .ranking-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ranking .rank-item {
+    background: black;
+    padding: 1rem;
+    margin: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 80%;
+    box-shadow: 0 0 10px rgba(149, 96, 96, 0.784);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.ranking .rank-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(224, 38, 38, 0.784);
+}
+
+/* Contact section styles */
+.contact {
+    padding: 1rem 0;
+    background: black;
+    text-align: center;
+}
+
+.contact a {
+    color: #b74b4b;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+/* Footer styles */
+footer {
+    background: black;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+
+    .novels .novel, .genres .genre, .ranking .rank-item {
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+    .hero input[type="text"] {
+        width: 80%;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        float: none;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+
+/* Novel Detail Page Styles */
+.novel-image {
+    max-width: 200px;
+    box-shadow: 0 0 20px rgba(149, 96, 96, 0.784);
+    height: auto;
+    margin-bottom: 1.5rem;
+}
+
+.novel-detail {
+    padding: 2rem;
+    background: black;
+    text-align: center;
+}
+
+.novel-detail h2 {
+    margin-bottom: 1rem;
+}
+
+.novel-detail p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+#switch-theme-btn{
+    display: inline-block;
+    padding: 0.5rem;
+    background-color: black;
+    border-radius: 4rem;
+    font-size: 1rem;
+    color: #b74b4b;
+    letter-spacing: 0rem;
+    font-weight: 20;
+    border: 2px solid #b74b4b;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+#switch-theme-btn:hover{
+    transform: scale3d(1.03);
+    background-color: #b74b4b;
+    color: white;
+    box-shadow: 0 0 15px #b74b4b;
+}

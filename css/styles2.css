@@ -1,0 +1,365 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    color: #dcdcff; /* Light purple text */
+    background-color: #0d001a; /* Dark mystical purple background */
+}
+
+/* Container for layout */
+.container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header styles */
+header {
+    padding: 1rem 0;
+    position: relative;
+    z-index: 1000;
+}
+
+header h1 {
+    float: left;
+    color: #a64ca6; /* Mana purple */
+    font-size: 2rem;
+}
+
+nav ul {
+    float: right;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #dcdcff;
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #a64ca6; /* Mana purple */
+    border-bottom: 3px solid #a64ca6;
+}
+
+/* Hero section styles */
+.hero {
+    background: #e2e2e2;
+    padding: 2rem 0;
+    text-align: center;
+    background-color: #0d001a;
+}
+
+.hero h2 {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    color: #dcdcff; /* Light purple */
+}
+
+.hero p {
+    font-size: 1.5rem;
+    color: #dcdcff;
+}
+
+.hero input[type="text"] {
+    padding: 0.5rem;
+    width: 50%;
+    margin-top: 1rem;
+    order: 1px solid #a64ca6;
+    border-radius: 5px;
+    background-color: #161616;
+    color: #dcdcff;
+}
+
+/* Novels section styles */
+.novels {
+    padding: 2rem 0;
+    background: #0d001a;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Make the entire novel box clickable */
+.novels .novel {
+    background: #161616;
+    max-height: 180px;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border: 1px solid #a64ca6;
+    border-radius: 10px;
+    width: 30%;
+    /*box-shadow: inset 0px 0px 20px 5px rgba(166, 76, 166, 0.784);*/
+    box-shadow: 0 0 10px rgba(166, 76, 166, 0.784);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    color: #dcdcff; /* Ensure the text color is inherited */
+    display: block; /* Make the link cover the entire novel block */
+}
+
+.novels .novel-list {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}    
+
+.novels .novel img {
+    max-width: 80px;
+    height: auto;
+    align-self: center;
+    border-radius: 12px;
+    margin-bottom: 0.5rem;
+}
+
+.novels .novel:hover {
+    transform: scale(1.05);
+    background-color: #a64ca6;
+    box-shadow: 0 0 15px rgba(166, 76, 166, 0.784);
+}
+
+/* Ensure hover for the link behaves correctly */
+.novels .novel h3, .novels .novel p {
+    margin-bottom: 0.5rem;
+}
+
+/*.novels a:hover {
+    text-decoration:none;
+}
+
+.novels a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}*/
+
+.novels .webnovel {
+    max-height: 20px;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    background: #161616;
+    border-radius: 10px;
+    width: 7%;
+    color: #a64ca6;
+    box-shadow: 0 0 15px rgba(166, 76, 166, 0.784);
+    letter-spacing: 0rem;
+    transition: 0.3s ease;
+    text-decoration: none;
+}
+
+.novels .webnovel:hover {
+    transform: scale(1.05);
+    background-color: #a64ca6;
+    color: #0d001a;
+    box-shadow: 0 0 10px #a64ca6;
+}
+
+/* Genres section styles */
+.genres {
+    padding: 2rem 0;
+    background: #0d001a;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.genres .genre-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.genres .genre {
+    background: #161616;
+    padding: 1rem;
+    margin: 0.5rem;
+    border: 1px solid #a64ca6;
+    border-radius: 10px;
+    width: 45%;
+    box-shadow: 0 0 10px rgba(166, 76, 166, 0.784);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    color: #dcdcff; /* Ensure the text color is inherited */
+    display: block; /* Make the link cover the entire genre block */
+}
+
+/*.genres a {
+    color: #333;
+    text-decoration: none;
+    font-weight: none;
+}
+
+.genres a:hover {
+    text-decoration: none;
+}*/
+
+.genres .genre:hover {
+    transform: scale(1.05);
+    background-color: #a64ca6;
+    box-shadow: 0 0 15px rgba(166, 76, 166, 0.784)
+}
+
+.genres .genre h3 {
+    margin-bottom: 0rem;
+}
+
+/* Ranking section styles */
+.ranking {
+    padding: 1rem 0;
+    background: #0d001a;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.ranking .ranking-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ranking .rank-item {
+    background: #161616;
+    padding: 1rem;
+    margin: 0.5rem;
+    border: 1px solid #a64ca6;
+    border-radius: 5px;
+    width: 80%;
+    box-shadow: 0 0 10px rgba(166, 76, 166, 0.784);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    color: #dcdcff; /* Ensure the text color is inherited */
+    display: block; /* Make the link cover the entire rank-item block */
+}
+
+/*.ranking a {
+    color: #333;
+    text-decoration: none;
+    font-weight: none;
+}
+
+.ranking a:hover {
+    text-decoration: none;
+}*/
+
+.ranking .rank-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(166, 76, 166, 0.784);
+}
+
+.ranking .rank-item h3 {
+    margin-bottom: 0.5rem;
+}
+
+/* Contact section styles */
+.contact {
+    padding: 1rem 0;
+    background: #0d001a;
+    text-align: center;
+}
+
+.contact a {
+    color: #a64ca6;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+/* Footer styles */
+footer {
+    background: #0d001a;
+    color: #dcdcff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+
+    .novels .novel, .genres .genre, .ranking .rank-item {
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+    .hero input[type="text"] {
+        width: 80%;
+    }
+
+    nav ul {
+        float: none;
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+/* Novel Detail Page Styles */
+.novel-image {
+    max-width: 200px;
+    box-shadow: 0 0 300px rgba(166, 76, 166, 0.784);
+    height: auto;
+    margin-bottom: 1.5rem;
+}
+
+.novel-detail {
+    padding: 2rem;
+    background: #0d001a;
+    text-align: center;
+}
+
+.novel-detail h2 {
+    margin-bottom: 1rem;
+    color: #dcdcff;
+}
+
+.novel-detail p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #dcdcff;
+}
+
+.novel-detail .green{
+    font-size: 25px;
+    color:green;
+}
+
+.novel-detail .red{
+    font-size: 25px;
+    color:red;
+}
+
+
+#switch-theme-btn{
+    display: inline-block;
+    padding: 0.5rem;
+    background-color: #0d001a;
+    border-radius: 3rem;
+    font-size: 1rem;
+    color: #a64ca6;
+    letter-spacing: 0rem;
+    font-weight: 20;
+    border: 2px solid #a64ca6;
+    cursor: pointer;
+}
+
+#switch-theme-btn:hover{
+    transform: scale3d(1.03);
+    background-color: #a64ca6;
+    color: #0d001a;
+    box-shadow: 0 0 15px #a64ca6;
+}
