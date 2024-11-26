@@ -329,3 +329,47 @@ footer {
     color: white;
     box-shadow: 0 0 15px #938787dc;
 }
+
+/* Update the search results styles */
+.search-results {
+    position: relative;
+    top: 100%; /* Position right below the search bar */
+    left: 275px;
+    right: 0;
+    background: #333;
+    border: 1px solid #938787dc;
+    border-radius: 0 0 5px 5px;
+    max-height: 300px;
+    width: 850px;
+    overflow-y: auto;
+    z-index: 1000;
+    display: none;
+}
+
+.search-result-item {
+    padding: 10px;
+    border-bottom: 1px solid #938787dc;
+}
+
+.search-result-item:last-child {
+    border-bottom: none;
+}
+
+.search-result-item a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #dcdcff;
+}
+
+.search-result-item img {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.search-result-item h3 {
+    margin: 0;
+    font-size: 1rem;
+}
